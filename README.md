@@ -16,6 +16,20 @@ A Streamlit web application that predicts the species of a penguin based on phys
 ---
 
 ## 📁 Project Structure
+CELEBALTECHASSIGNMENTWEEK7/ <br>
+│<br>
+├── __pycache__/<br>
+├── models/                  # Contains penguin_model.pkl<br>
+├── results/                 # Save prediction logs or model metrics<br>
+├── visuals/                 # Save visual output images (e.g., model comparison plot)<br>
+│
+├── app.py                   # ✅ Streamlit App<br>
+├── model_utils.py           # ✅ Prediction logic<br>
+├── penguins_EDA.ipynb       # ✅ EDA & training notebook<br>
+├── README.md                # ✅ Full project guide<br>
+├── requirements.txt         # ✅ Dependencies<br>
+└── LICENSE                  # MIT or open source license<br>
+
 ## 📊 Dataset Used
 Palmer Penguins Dataset
 
