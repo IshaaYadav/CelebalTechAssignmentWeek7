@@ -16,7 +16,7 @@ st.write(
     """
 )
 
-# 📌 Sidebar for user input
+# Sidebar for user input
 st.sidebar.header("Input Features")
 
 def user_input_features():
@@ -41,13 +41,13 @@ def user_input_features():
 
 input_data = user_input_features()
 
-# 📌 Predict on button click
+#Predict on button click
 if st.button("Predict Species"):
     prediction, confidence = predict_species(input_data)
     st.success(f"Predicted Species: **{prediction}**")
     st.info(f"Model Confidence: **{confidence}%**")
 
-    # 📊 Visual feedback
+    #Visual feedback
     st.subheader("Visual Comparison")
 
     # Plot user input as bar chart

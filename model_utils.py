@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 import os
 
-# 📌 Train the model (called once during development)
+#Train the model (called once during development)
 def train_and_save_model():
     df = sns.load_dataset("penguins").dropna()
     df['sex'] = df['sex'].map({'Male': 0, 'Female': 1})
@@ -27,14 +27,14 @@ def train_and_save_model():
     joblib.dump(model, "models/penguin_model.pkl")
     return model
 
-# 📌 Load model
+#Load model
 def load_model():
     model_path = "models/penguin_model.pkl"
     if not os.path.exists(model_path):
         return train_and_save_model()
     return joblib.load(model_path)
 
-# 📌 Preprocess input and predict
+#Preprocess input and predict
 def predict_species(input_dict):
     model = load_model()
     df_input = pd.DataFrame([input_dict])
